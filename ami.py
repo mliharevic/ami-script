@@ -101,7 +101,7 @@ class AmiAssociation():
         ami_dict["InstanceIds"]=instance_ids
         return ami_dict
 
-#   Main Function
+#   Gathers all information and outputs as JSON
     def getAmis(self):
         images = self.getAllInstanceAmis()
         image_dict = self.createDict(images)
