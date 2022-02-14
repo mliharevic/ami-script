@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 #
+# Gathers AMI information and associated instances
+#
 
 import os
 import json
@@ -9,7 +11,7 @@ from botocore.exceptions import ClientError
 
 class AmiAssociation():
 
-#Set Up Variables
+#   Set Up Variables
     def __init__(self):
         self.access_key = os.environ.get('AWS_ACCESS_KEY_ID')
         self.secret_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
